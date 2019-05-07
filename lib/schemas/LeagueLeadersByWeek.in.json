@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "properties": {
+        "format": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "XML",
+                "JSON"
+            ],
+            "default": "XML"
+        },
+        "season": {
+            "required": true,
+            "type": "string"
+        },
+        "week": {
+            "required": true,
+            "type": "string"
+        },
+        "position": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ALL",
+                "OFFENSE",
+                "QB",
+                "RB",
+                "WR",
+                "TE",
+                "DEFENSE",
+                "DL",
+                "LB",
+                "DB",
+                "K"
+            ],
+            "default": "ALL"
+        },
+        "column": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "FantasyPoints",
+                "PassingYards",
+                "RushingYards",
+                "Receptions",
+                "Sacks",
+                "Interceptions",
+                "Touchdowns"
+            ]
+        }
+    }
+}

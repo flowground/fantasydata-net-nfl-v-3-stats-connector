@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "format": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "XML",
+                "JSON"
+            ],
+            "default": "XML"
+        },
+        "season": {
+            "required": true,
+            "type": "string"
+        },
+        "week": {
+            "required": true,
+            "type": "string"
+        },
+        "playerid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

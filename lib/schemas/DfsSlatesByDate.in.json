@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "format": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "XML",
+                "JSON"
+            ],
+            "default": "XML"
+        },
+        "date": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

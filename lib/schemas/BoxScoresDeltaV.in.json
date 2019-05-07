@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "format": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "XML",
+                "JSON"
+            ],
+            "default": "XML"
+        },
+        "season": {
+            "required": true,
+            "type": "string"
+        },
+        "week": {
+            "required": true,
+            "type": "string"
+        },
+        "playerstoinclude": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "all",
+                "fantasy",
+                "idp"
+            ],
+            "default": "all"
+        },
+        "minutes": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
